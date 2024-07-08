@@ -28,6 +28,7 @@ function Producto(props) {
           >
             <Heading>{Name}</Heading>
             <Text>Precio: ${Precio}$</Text>
+            <Text>Hola que hay</Text>
             <Button >Añadir</Button>
           </CardBody>
         </HStack>
