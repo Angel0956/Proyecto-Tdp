@@ -1,9 +1,9 @@
 [
-  { "Name": "Zapatos","Precio": 150, "img":"/img03.jpg"},
-  { "Name": "Camiseta", "Precio": 10.99, "img":"/Camiseta.avif" },
-  { "Name": "Pantalones", "Precio": 15.5, "img":"/Pantalones.png"},
-  { "Name": "reloj", "Precio": 7.25, "img":"/Reloj.jpg"},
-  { "Name": "Chaqueta", "Precio": 12.3, "img":"/Chaqueta.webp" },
-  { "Name": "Gorra", "Precio": 20.0, "img":"/Gorra.webp"}
+  { "id":1, "Name": "Zapatos","Precio": 150, "img":"/img03.jpg"},
+  { "id":2,"Name": "Camiseta", "Precio": 10.99, "img":"/Camiseta.avif" },
+  { "id":3,"Name": "Pantalones", "Precio": 15.5, "img":"/Pantalones.png"},
+  { "id":4,"Name": "reloj", "Precio": 7.25, "img":"/Reloj.jpg"},
+  { "id":5,"Name": "Chaqueta", "Precio": 12.3, "img":"/Chaqueta.webp" },
+  { "id":6,"Name": "Gorra", "Precio": 20.0, "img":"/Gorra.webp"}
   
 ] 

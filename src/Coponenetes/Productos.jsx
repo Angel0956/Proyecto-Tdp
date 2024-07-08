@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Card,
   CardBody,
@@ -11,8 +12,20 @@ import {
 } from "@chakra-ui/react";
 
 function Producto(props) {
-  
-  const { Name, Precio ,img} = props.Producto ;
+  const add_list = (producto) =>{
+    setList((productoPrev)=>[...productoPrev,producto])
+  }
+  const { item, setList} = props;
+  const {Name,Precio,img, id} = item
+  const Aniadir = ()=>{
+    const producto = {
+      name:Name,
+      precio:Precio,
+      image:img,
+      id:id
+    }
+    add_list(producto)
+  }
 
   return (
     <GridItem>
@@ -29,7 +42,7 @@ function Producto(props) {
             <Heading>{Name}</Heading>
             <Text>Precio: ${Precio}$</Text>
            
-            <Button >Añadir</Button>
+            <Button onClick={Aniadir}>Añadir</Button>
           </CardBody>
         </HStack>
       </Card>

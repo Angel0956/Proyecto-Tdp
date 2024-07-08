@@ -1,13 +1,16 @@
 import { Box, Heading, HStack, Image, Flex, Grid } from "@chakra-ui/react";
+import { useState } from "react";
 import Oferta from "./Coponenetes/Ofertas";
 import "./App.css";
 import Logo from "/Logo.png";
 import carrito from "/carrito.webp";
 import Producto from "./Coponenetes/Productos";
+import Menu_car from "./Coponenetes/ventana-emerge";
 import Productos from "./Productos.json";
 
 
 function App() {
+  const [Lista_deseados, setList] = useState([])
   return (
     <>
       <Box p={2} border="2px" borderColor="while" m="10px" borderRadius="5px">
@@ -16,9 +19,7 @@ function App() {
             <Image src={Logo} boxSize="100px" />
           </Box>
           <Box>
-            <Image src={carrito} boxSize="100px" />
-          
-            
+            <Menu_car setList={setList} Lista_deseados={Lista_deseados}/>
           </Box>
         </HStack>
       </Box>
@@ -34,7 +35,7 @@ function App() {
           <Heading mb="1em">Productos</Heading>
           <Grid templateColumns="repeat(auto-fill,minmax(25em,1fr))" gap="2em">
             {Productos.map((iten, index) => (
-              <Producto Key={index} Producto={iten} />
+              <Producto key={index} item={iten} setList = {setList} />
             ))}
           </Grid>
         </Box>
