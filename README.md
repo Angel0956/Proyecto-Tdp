@@ -32,7 +32,7 @@ npm run dev
 
 - App.jsx
 - Componentes
-    - Carrito.jsx
+    - ventana-emege.jsx
     - Ofertas.jsx
     - Producto.jsx
 

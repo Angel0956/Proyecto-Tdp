@@ -12,13 +12,12 @@ function Oferta() {
     <Card>
       
       <CardBody >
-        <Image src="/Oferta1.jpeg" />
-        <Heading size='lg'>Coputadora oferta</Heading>
+        <Image src="/Camiseta.avif" />
+        <Heading size='lg'>Camisetas 2x1</Heading>
         <Text>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
-          maiores ab? Ab modi reiciendis mollitia rem dignissimos, alias iste
-          distinctio facere. Iure illo vero deleniti aliquid, architecto sit
-          obcaecati tempore.
+          Ofertas 2x1 en Camisetas Proximamente!!
+          Tendremos gran variedad de camisetas en 
+          ofertas, ademas de muchos productos mas.
         </Text>
       </CardBody>
     </Card>

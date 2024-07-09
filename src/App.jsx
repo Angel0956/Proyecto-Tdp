@@ -2,7 +2,7 @@ import { Box, Heading, HStack, Image, Flex, Grid } from "@chakra-ui/react";
 import { useState } from "react";
 import Oferta from "./Coponenetes/Ofertas";
 import "./App.css";
-import Logo from "/Logo.png";
+import Logo from "/LOGOO.jpeg";
 import carrito from "/carrito.webp";
 import Producto from "./Coponenetes/Productos";
 import Menu_car from "./Coponenetes/ventana-emerge";
@@ -13,10 +13,10 @@ function App() {
   const [Lista_deseados, setList] = useState([])
   return (
     <>
-      <Box p={2} border="2px" borderColor="while" m="10px" borderRadius="5px">
+      <Box p={2} border="2px" borderColor="while" m="10px" borderRadius="50x">
         <HStack justifyContent="space-between " mr="2em" ml="2em">
           <Box>
-            <Image src={Logo} boxSize="100px" />
+            <Image src={Logo} boxSize="100px" w="100%"/>
           </Box>
           <Box>
             <Menu_car setList={setList} Lista_deseados={Lista_deseados}/>

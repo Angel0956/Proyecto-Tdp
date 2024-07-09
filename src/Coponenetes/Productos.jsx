@@ -40,7 +40,7 @@ function Producto(props) {
             gap="0.8em"
           >
             <Heading>{Name}</Heading>
-            <Text>Precio: ${Precio}$</Text>
+            <Text>Precio: ${Precio}</Text>
            
             <Button onClick={Aniadir}>Añadir</Button>
           </CardBody>

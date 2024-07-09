@@ -36,7 +36,7 @@ function Card_carrito(props) {
         <Image src={image} flex="1" boxSize="100px" />
         <CardBody flex="1">
           <Heading>{name}</Heading>
-          <Text>Precio: {precio}$</Text>
+          <Text>Precio: ${precio}</Text>
         </CardBody>
       </Flex>
       <Button onClick={()=>Eliminar(id)} leftIcon={<AiOutlineClose />} colorScheme="red">
@@ -72,7 +72,7 @@ function Menu_car(props) {
               ))}
             </DrawerBody>
             <DrawerFooter>
-              <Text>Total: {total}</Text>
+              <Text>Total: $ {total}</Text>
             </DrawerFooter>
           </DrawerContent>
         </DrawerOverlay>
